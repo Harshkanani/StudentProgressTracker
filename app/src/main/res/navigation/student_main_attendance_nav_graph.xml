@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/student_main_attendance_nav_graph"
+    app:startDestination="@id/student_Main_Home">
+
+    <fragment
+        android:id="@+id/student_Main_Home"
+        android:name="com.spt.studentprogresstracker.Student_Main_Home"
+        android:label="fragment_student__main__home"
+        tools:layout="@layout/fragment_student__main__home" >
+        <action
+            android:id="@+id/action_student_Main_Home_to_student_Main_Attandance"
+            app:destination="@id/student_Main_Attandance" />
+        <action
+            android:id="@+id/action_student_Main_Home_to_student_Main_Notice"
+            app:destination="@id/student_Main_Notice" />
+    </fragment>
+    <fragment
+        android:id="@+id/student_Main_Attandance"
+        android:name="com.spt.studentprogresstracker.Student_Main_Attandance"
+        android:label="fragment_student__main__attandance"
+        tools:layout="@layout/fragment_student__main__attandance" >
+        <action
+            android:id="@+id/action_student_Main_Attandance_to_student_Main_Attandance1"
+            app:destination="@id/student_Main_Attandance1" />
+        <argument
+            android:name="clickCheck"
+            app:argType="string"
+            android:defaultValue="null" />
+        <action
+            android:id="@+id/action_student_Main_Attandance_to_student_Main_Result"
+            app:destination="@id/student_Main_Result" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/student_Main_Attandance1"
+        android:name="com.spt.studentprogresstracker.Student_Main_Attandance1"
+        android:label="fragment_student__main__attandance1"
+        tools:layout="@layout/fragment_student__main__attandance1" >
+        <argument
+            android:name="subcode"
+            app:argType="string"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/student_Main_Result"
+        android:name="com.spt.studentprogresstracker.Student_Main_Result"
+        android:label="fragment_student__main__result"
+        tools:layout="@layout/fragment_student__main__result">
+        <argument
+            android:name="subcode"
+            app:argType="string"
+            android:defaultValue="null" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/student_Main_Notice"
+        android:name="com.spt.studentprogresstracker.Student_Main_Notice"
+        android:label="fragment_student__main__notice"
+        tools:layout="@layout/fragment_student__main__notice" >
+        <action
+            android:id="@+id/action_student_Main_Notice_to_student_Main_View_Notice"
+            app:destination="@id/student_Main_View_Notice" />
+    </fragment>
+    <fragment
+        android:id="@+id/student_Main_View_Notice"
+        android:name="com.spt.studentprogresstracker.Student_Main_View_Notice"
+        android:label="fragment_student__main__view__notice"
+        tools:layout="@layout/fragment_student__main__view__notice" >
+        <argument
+            android:name="noticesub"
+            app:argType="string"
+            android:defaultValue="null" />
+    </fragment>
+
+</navigation>

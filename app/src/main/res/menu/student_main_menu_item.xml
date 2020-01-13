@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/student_main_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item
+        android:id="@+id/student_main_faculty"
+        android:title="Faculty"
+        android:icon="@drawable/ic_person_black_24dp"/>
+
+    <item
+        android:id="@+id/student_main_setting"
+        android:title="Setting"
+        android:icon="@drawable/ic_settings_applications_black_24dp"/>
+
+    <item
+        android:id="@+id/student_main_send"
+        android:title="Send"
+        android:icon="@drawable/ic_send_black_24dp"/>
+
+    <item
+        android:id="@+id/student_main_logout"
+        android:title="LogOut"
+        android:icon="@drawable/ic_logout_new_black_24dp"/>
+
+    <group
+        android:id="@+id/student_main_communicate"
+        android:title="Communicate">
+
+    <item
+        android:id="@+id/student_main_aboutus"
+        android:title="About Us"
+        android:icon="@drawable/ic_aboutus_black_24dp"/>
+
+    <item
+        android:id="@+id/student_main_feedback"
+        android:title="Feedback"
+        android:icon="@drawable/ic_feedback_black_24dp"/>
+
+    </group>
+</menu>
